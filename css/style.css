@@ -128,3 +128,125 @@ ol li::before {
     height: 20px;
     border-bottom: 1px solid #dedbdb;
 }
+.list-2column {
+    list-style-type: none;
+    padding-left: 30px;
+}
+.list-2column li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263555;
+    font-size: 15px;
+    position: relative;
+    line-height: 30px;
+}
+.list-2column li::before {
+    display: inline-block;
+    content: url(../img/right-arrow.png);
+    width: 12px;
+    height: 9px;
+    position: relative;
+    right: 14px;
+}
+.testimonial-box {
+    background-color: #fcfafa;
+    padding: 23px;
+    border: 1px solid #dfdcdc;
+    position: relative;
+    margin-bottom: 35px;
+}
+.testimonial-box::before{
+        content: " ";
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 31px 15.5px 0 15.5px;
+        border-color: #e9e6e6 transparent transparent transparent;
+        bottom: -31px;
+        left: 50%;
+        margin-left: -15.5px;
+}
+.testimonial-box::after {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 29px 14.5px 0 14.5px;
+    border-color: #fcfafa transparent transparent transparent;
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    margin-left: -14.5px;
+}
+.testimonial-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263555;
+    font-size: 16px;
+    line-height: 23px;
+}
+.to-top-button {
+    position: fixed;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #38afe5;
+    color: #ffffff;
+    bottom: 10px;
+    right: 100px;
+    padding-top: 6px;
+    border: 1px solid transparent;
+    transition: all 500ms ease-in-out;
+}
+.to-top-button a {
+    color: #ffffff;
+}
+.to-top-button:hover {
+    background: #263555;
+    border: 1px solid #ffffff;
+}
+.grey-footer {
+    padding: 44px 61px 59px 61px;
+    background-color: #30455b;
+    max-width: 1024px;
+}
+.grey-footer li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 34px;
+}
+.contacts-column p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 34px;
+}
+.contacts-column p span {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 19px;
+}
+.contacts-column a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: none;
+}
+@media (max-width:500px){
+    .white-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width:1150px){
+    .to-top-button {
+        right: 10px;
+    }
+}
