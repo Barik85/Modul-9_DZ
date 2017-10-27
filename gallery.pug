@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include includes/head.pug
+        title Gallery-Modul9-DZ
+    body
+        include includes/header.pug
+        .container.white-wrapper
+            .row
+                .col-xs-12
+                    h1.heading1 Gallery
+            .row
+                mixin gallery-item(name)
+                    .col-xs-12.col-sm-6.col-lg-4
+                        div.gallery-item
+                            a(href=name)
+                                img(src=name)
+                +gallery-item('img/Gallery_1.jpg')
+                +gallery-item('img/Gallery_2.jpg')                    
+                +gallery-item('img/Gallery_3.jpg')                    
+                +gallery-item('img/Gallery_5.jpg')                    
+                +gallery-item('img/Gallery_5.jpg')                    
+                +gallery-item('img/Gallery_6.jpg')                    
+                +gallery-item('img/Gallery_7.jpg')                    
+                +gallery-item('img/Gallery_8.jpg')                    
+                +gallery-item('img/Gallery_9.jpg')                    
+                                                                                                                
+                                    
+        include includes/footer.pug

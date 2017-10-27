@@ -1,43 +1,10 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
-        link(href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet")
-        link(rel="stylesheet" type="text/css" href="css/flaticon.css")
-        link(rel="stylesheet", href="css/style.css")
+        include includes/head.pug
         title About-modul9-DZ
     body
-        header.container#top
-            .row.main-menu-wrapper
-                nav.main-menu
-                    .logo-box.col-xs-12.text-center.col-md-2.col-md-push-5
-                        a(href="#")
-                            img(src="img/logo_journey.png", alt="logo")
-                    ul.list-unstyled.list-inline.col-xs-12.col-md-5.col-md-pull-2.text-justify.left-menu
-                        li
-                            a(href="#") Home
-                        li.drop-down-area
-                            a(href="#") About
-                            ul.list-unstyled.drop-down-menu
-                                li
-                                    a(href="#") Agency
-                                li
-                                    a(href="#") News
-                                li
-                                    a(href="#") Team
-                        li
-                            a(href="#") Gallery
-                    ul.list-unstyled.list-inline.col.xs-12.col-md-5.right-menu
-                        li
-                            a(href="#") tours
-                        li
-                            a(href="#") Blog
-                        li
-                            a(href="#") Contacts
+        include includes/header.pug
         .container.white-wrapper
             section.row
                 .col-lg-9.col-md-12
@@ -129,48 +96,6 @@ html(lang="en")
                     .col-xs-2
                     p.testimonial-title.text-center.col-xs-12 Mark Johnson
                     p.testimonial-subtitle.text-center.col-xs-12 Director of Product Management
-        .to-top-button.text-center
-            a(href="#top")
-                span.glyphicon.glyphicon-menu-up
-        .container.grey-footer
-            .row
-                .col-sm-3.col-xs-4
-                    ul.list-unstyled
-                        li
-                            a(href=" ") Faqs page
-                        li
-                            a(href=" ") People Say
-                .col-sm-3.col-xs-4
-                    ul.list-unstyled
-                        li
-                            a(href=" ") Useful links
-                        li
-                            a(href=" ") Partners
-                .col-sm-3.col-xs-4
-                    ul.list-unstyled
-                        li
-                            a(href=" ") Insurance
-                        li
-                            a(href=" ") Family travel
-                .col-sm-3.col-xs-12.contacts-column
-                    p Contact us
-                        span TEL: 
-                            a(href="tel:1-800-234-5678") 1-800-234-5678
-                        span
-                            a(href="mailto:info@demolink.org") info@demolink.org
-        .container.under-footer
-            .row.text-center
-                .col-xs-12
-                    a(href="#")
-                        i.flaticon-twitter-logo
-                    a(href="#")
-                        i.flaticon-facebook-logo
-                    a(href="#")
-                        i.flaticon-google-plus-logo
-                    a(href="#")
-                        i.flaticon-linkedin-logo
-            .row.text-center
-                .col-xs-12
-                    p Journey © 2013 | Privacy Policy | Website designed by TemplateMonster.com
+        include includes/footer.pug
                 
                                      
