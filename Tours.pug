@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include includes/head.pug
+    body
+        include includes/header.pug
+        .container.white-wrapper
+            .row
+                .col-sm-12.col-md-8
+                    h1.heading1 Tours
+                    .row
+                        mixin tour-item(path, title)
+                            .col-xs-12.col-sm-6
+                                .tour-item.row
+                                    .img-box.col-xs-6
+                                        img(src=path)
+                                    .item-desctiption.col-xs-6
+                                        h5.heading5=title
+                                        p.sub-title.
+                                            Lorem ipsum dolor sit amet 
+                                        p.item-price FROM 399$
+                                        p.sub-title.
+                                            Lorem ipsum dolor sit amet 
+                                        p.item-price FROM 299$ 
+                                        a(href="#").btn.btn-defaul.details-btn Details
+                        +tour-item('img/place1.jpg', 'Gellentesque imperdiet')
+                        +tour-item('img/place2.jpg', 'Mellentesquj mperdiete')
+                        +tour-item('img/place3.jpg', 'Mellentesquj mperdiete')
+                        +tour-item('img/place4.jpg', 'Mellentesquj mperdiete')
+                        +tour-item('img/place5.jpg', 'Mellentesquj mperdiete')
+                        +tour-item('img/place6.jpg', 'Mellentesquj mperdiete')                                                                                                
+                .col-md-1
+                .col-xs-12.col-md-3
+                    .col-sm-4.col-md-12
+                        h2.heading1.hiden-tour Browse
+                        .row
+                            .col-xs-2.col-sm-0
+                            .col-xs-8.col-sm-12
+                                form(action="#")
+                                    label.sub-title(for="operator-select") Browse by Tour Operator
+                                    .custom-select
+                                        select.child-select(id="operator-select")
+                                            option(value="Browse by Tour Operator") Browse by Tour Operator
+                                            option(value="Tez-tour") Tez-tour
+                                            option(value="Operator1") Operator1
+                                            option(value="Anex") Anex
+                                    input.btn.btn-defaul.details-btn(type="submit" value="Search")
+                            .col-xs-2.col-sm-0
+                    .col-sm-8.col-md-12
+                        h2.heading1.hiden-tour Search
+                        p.blue-text All Tour Operators
+                        form(action="#")
+                            .row
+                                .col-xs-6.col-md-12
+                                    label.sub-title(for="Destination-select") Destination
+                                    .custom-select
+                                        select.child-select(id="Destination-select")
+                                            option(value="Any destination") Any destination
+                                            option(value="destination1") destination1
+                                            option(value="destination2") destination2
+                                            option(value="destination3") destination3
+                                    label.sub-title(for="departing-select") Departing
+                                    .custom-select
+                                        select.child-select(id="departing-select")
+                                            option(value="Any departing") Any departing
+                                            option(value="Departing1") Departing1
+                                            option(value="Departing2") Departing2
+                                            option(value="Departing3") Departing3
+                                .col-xs-6.col-md-12
+                                    label.sub-title(for="price-select") Price
+                                    .custom-select
+                                        select.child-select(id="price-select")
+                                            option(value="Any Price") Any price
+                                            option(value="Price1") Price1
+                                            option(value="Price2") Price2
+                                            option(value="Price3") Price3
+                                    label.sub-title(for="Destination-select") Destination
+                                    .custom-select
+                                        select.child-select(id="Duration-select")
+                                            option(value="Any duration") Any duration
+                                            option(value="duration1") duration1
+                                            option(value="duration2") duration2
+                                            option(value="duration3") duration3
+                                    input.btn.btn-defaul.details-btn(type="submit" value="Search")   
+        include includes/footer.pug
