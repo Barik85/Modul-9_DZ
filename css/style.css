@@ -53,6 +53,7 @@ nav a:hover {
     border-radius: 3px;
     text-align: center;
     left: -3px;
+    z-index: 1;
 }
 .drop-down-menu::before {
     content: " ";
